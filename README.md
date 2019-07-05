@@ -6,9 +6,9 @@ document.oncontextmenu = function() {
   return false;  
 }  
 
-if (window.Event) {  
-				document.captureEvents(Event.MOUSEUP);  
-}
+			if (window.Event) {
+				document.captureEvents(Event.MOUSEUP);
+			}
 
 			function nocontextmenu() {
 				event.cancelBubble = true
