@@ -1,5 +1,5 @@
-# Some-JS-Knowledge  
-平时用到的一些JS功能整理  
+# some-js-knowledge  
+平时用到的一些js功能整理  
   
 			// 禁止右键点击  
 			document.oncontextmenu = function() {  
@@ -28,10 +28,12 @@
 			}
 			document.oncontextmenu = nocontextmenu; // for IE5+
 			document.onmousedown = norightclick; // for all others
+			
 			// 禁止Ctrl键  
 			document.onkeydown = function() {  
 			  if (event.ctrlKey) return false;  
 			}  
+			
 			// 禁止选择文本
 			var omitformtags = ["input", "textarea", "select"];
 			omitformtagsomitformtags = omitformtags.join("|");
