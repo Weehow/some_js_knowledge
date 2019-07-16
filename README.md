@@ -37,6 +37,26 @@
 			// 禁止选择文本
 			var omitformtags = ["input", "textarea", "select"];
 			omitformtagsomitformtags = omitformtags.join("|");
+			
+			<script type="text/javascript">
+				function isIE() {
+					if (!!window.ActiveXObject || "ActiveXObject" in window) {
+						return true;
+					} else {
+						return false;
+					}
+				}
+
+				function resize() {
+					var wid = window.innerWidth;
+					var realWid = wid < 1440 ? 1440 : wid;
+					if (!isIE()) {
+						$('.wrap').css('zoom', realWid / 1920)
+					}
+				}
+				resize()
+				window.onresize = resize;
+			</script>
 
 			function disableselect(e) {
 				if (omitformtags.indexOf(e.target.tagName.toLowerCase()) == -1) {
