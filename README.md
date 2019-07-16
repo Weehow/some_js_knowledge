@@ -1,4 +1,5 @@
 # some-js-knowledge  
+
 	平时用到的一些js功能整理  
   
 			// 禁止右键点击  
