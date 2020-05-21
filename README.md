@@ -1,4 +1,4 @@
-# some-js-knowledge  
+# some_js_knowledge  
 
 	平时用到的一些js功能整理  
   
